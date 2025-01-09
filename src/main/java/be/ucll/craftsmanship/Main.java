@@ -8,6 +8,6 @@ public class Main {
 
         System.out.println("Rectangle: " + rectangle.area());
         System.out.println("Square: " + square.area());
-        System.out.println("Circle: " + square.area());
+        System.out.println("Circle: " + circle.area());
     }
 }
