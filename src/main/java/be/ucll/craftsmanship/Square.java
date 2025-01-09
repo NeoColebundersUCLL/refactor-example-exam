@@ -1,26 +1,22 @@
 package be.ucll.craftsmanship;
 
-public class Square extends Rectangle {
+public class Square implements Shape {
+    private int side;
 
-    Square(int width, int height) {
-        super(width, height);
+    public Square(int side) {
+        this.side = side;
     }
 
-    public int getLongLength() {
-        return longLength;
+    public int getSide() {
+        return side;
     }
 
-    public int getShortLength() {
-        return shortLength;
+    public void setSide(int side) {
+        this.side = side;
     }
 
-    public void setShortLength(int shortLength) {
-        this.shortLength = shortLength;
-        this.longLength = shortLength;
-    }
-
-    public void setLongLength(int longLength) {
-        this.longLength = longLength;
-        this.shortLength = longLength;
+    @Override
+    public double area() {
+        return side * side;
     }
 }
